@@ -2,22 +2,91 @@
     padding: 0;
     margin: 0;
 }
-header{
-    padding-top: 25px;
-    padding-bottom: 13px;
-    background-color: rgba(0);
-}
 header .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.container{
+header{
+    padding-top: 25px;
+    padding-bottom: 13px;
+    background-color: rgba(0, 0, 0, .5);
+}
+header .container{
     max-width: 1170px;
     margin: auto;
 }
-header .btn{
+header form{
+    width: 208px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #ebebeb;
+}
+header form input{
+    background-color: transparent;
+    border: none;
+    line-height: 42px;
     display: inline-block;
-    line-height: 40px;
-    min-width: ;
+    width: 75%;
+    padding-left: 7px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+header form input:focus, header form button:focus{
+    border: none;
+    outline: none;
+}
+header form button{
+    border: none;
+    background-color: transparent;
+    width: 17%;
+    color: red;
+    padding-top: 10px;
+    font-size: 17px;
+    display: inline-block;
+}
+header .btn{
+    width: 170px;
+    height: 42px;
+    background-color: #252525;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-decoration: none;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .btn i{
+    font-size: 18px;
+    margin-right: 13px;
+    display: inline-block;
+}
+header .grey{
+    background-color: #464646;
+}
+header .red{
+    background-color: #fa090a;
+}
+header .border::after{
+    height: 2px;
+    background-color: #464646;
+}
+nav li{
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 30px;
+}
+.social a{
+    height: 30px;
+    width: 30px;
+    background-color: #fa090a;
+    text-decoration: none;
+    margin-left: 16px;
 }
